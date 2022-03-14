@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Belajar Action dan Variabel didalam HTML GO</title>
+</head>
+
+<body>
+    {{"Biodata User"}}
+    <table border="1">
+        <tr>
+            <td>Nama:</td>
+            <td>{{.Nama}}</td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin:</td>
+            <td style="text-transform: capitalize;">{{.JenisKelamin}}</td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>
+                {{range $urutan,$nilainya := .Hobi}} {{$nilainya}}, {{end}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">Keterangan</td>
+        </tr>
+        <tr>
+            <td>Pekerjaan :{{.Biodata.Pekerjaan}}</td>
+            <td>Alamat :{{.Biodata.Alamat}}</td>
+        </tr>
+    </table>
+</body>
+
+</html>

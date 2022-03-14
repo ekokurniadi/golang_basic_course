@@ -1,0 +1,26 @@
+{{define "form"}}
+<html>
+
+<head>
+    <title>Form input data</title>
+</head>
+
+<body>
+    <h1>Form Pesan</h1>
+    <hr>
+    <form method="post" action="/proses">
+        <label>Name :</label>
+        <input type="text" placeholder="Silahkan isi nama lengkap anda" name="name" required />
+        <br/>
+
+        <label>Message :</label>
+        <input type="text" name="message" placeholder="Tulis pesan yang ingin anda kirim" required />
+        <br/>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
+{{end}}

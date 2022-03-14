@@ -1,0 +1,102 @@
+<!-- Pembuka tag HTML -->
+<html>
+
+<head>
+    <!-- Ini adalah judul dari halaman -->
+    <title>Belajar Dasar HTML</title>
+    <!-- Penerapan tag style untuk memanipulasi suatu isi dari elemen -->
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+        }
+        
+        h1 {
+            color: red;
+        }
+        
+        h2 {
+            color: blue;
+        }
+        
+        h3 {
+            color: green;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ini adalah isi dari tag h1</h1>
+    <h2>Ini adalah isi dari tag h2</h2>
+    <h3>Ini adalah isi dari tag h3</h3>
+    <h4>Ini adalah isi dari tag h4</h4>
+    <h5>Ini adalah isi dari tag h5</h5>
+    <h6>Ini adalah isi dari tag h6</h6>
+
+    <!-- Implementasi dari tag table -->
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Golang</td>
+            <td>3 tahun</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- Implementasi Merge column dan juga row -->
+    <table>
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Nama</th>
+            <th colspan="2">Kesukaan</th>
+        </tr>
+        <tr>
+            <th>Makanan</th>
+            <th>Minuman</th>
+        </tr>
+        <tr>
+            <td>{{.No1}}</td>
+            <td>{{.Nama1}}</td>
+            <td>{{.Makanan1}}</td>
+            <td>{{.Minuman1}}</td>
+        </tr>
+        <tr>
+            <td>{{.No2}}</td>
+            <td>{{.Nama2}}</td>
+            <td>{{.Makanan2}}</td>
+            <td>{{.Minuman2}}</td>
+        </tr>
+        <tr>
+            <td>{{.No3}}</td>
+            <td>{{.Nama3}}</td>
+            <td>{{.Makanan3}}</td>
+            <td>{{.Minuman3}}</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- Penutup tag HTML -->

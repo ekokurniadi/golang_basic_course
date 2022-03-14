@@ -1,0 +1,24 @@
+{{define "form-login"}}
+<html>
+
+<head>
+    <title>Login User</title>
+</head>
+
+<body>
+    <h1>Login User</h1>
+    <hr>
+    <br>
+    <form method="post" action="/login">
+        <label>Username :</label>
+        <input type="text" name="username" placeholder="Masukkan username anda" required>
+        <br>
+        <label>Password :</label>
+        <input type="password" name="password" placeholder="Masukkan password anda" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+
+</html>
+{{end}}
